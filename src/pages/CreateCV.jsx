@@ -81,8 +81,8 @@ Informations du candidat:
 
 Améliore et professionnalise les descriptions. Utilise des verbes d'action forts.`;
 
-      const response = await fetch("http://localhost:3001/api/generate-cv", {
-        method: "POST",
+const response = await fetch("https://le-cv-saas-production.up.railway.app/api/generate-cv", {
+```        method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt })
       });
