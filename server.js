@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const client = new Anthropic({
-  apiKey: "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",
+  apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
 app.post("/api/generate-cv", async function(req, res) {
