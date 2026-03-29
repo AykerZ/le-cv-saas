@@ -1,8 +1,7 @@
 const Anthropic = require("@anthropic-ai/sdk").default;
 
 const client = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+apiKey: process.env.CLÉ_API_ANTHROPIC,});
 
 module.exports = async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
